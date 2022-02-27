@@ -2,7 +2,7 @@ import random
 import hashlib
 
 
-class Proofer:
+class Prover:
     def __init__(self, p, g, password):
         self.p = p
         self.g = g

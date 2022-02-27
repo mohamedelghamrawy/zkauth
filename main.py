@@ -1,6 +1,6 @@
 import sys
 
-from proofer import Proofer
+from prover import Prover
 from verifier import Verifier
 
 
@@ -29,12 +29,12 @@ if __name__ == '__main__':
     verifier = Verifier(p, g)
 
     # create and register true proofer
-    proofer = Proofer(p, g, password)
-    proofer.register(verifier)
+    prover = Prover(p, g, password)
+    prover.register(verifier)
 
-    # Real Proofer attempts verification
-    proofer.authenticate(verifier)
+    # Real prover attempts verification
+    prover.authenticate(verifier)
 
-    # Create fake proofer and atttempt verification
-    fake_proofer = Proofer(p,g, fake_password)
-    fake_proofer.authenticate(verifier)
+    # Create fake prover and attempt verification
+    fake_prover = Prover(p, g, fake_password)
+    fake_prover.authenticate(verifier)
