@@ -1,1 +1,1 @@
-# zkauth
+# ZkAuth: Zero-Knowledge Authentication
